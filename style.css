@@ -1,0 +1,248 @@
+.home-banner {
+  background-image: linear-gradient(
+      0.25turn,
+      rgba(0, 97, 225, 0.3),
+      rgba(90, 226, 241, 0.3)
+    ),
+    url('images/bg-home-banner.jpg');
+
+  background-size: cover;
+  /* position: relative; */
+  height: 700px;
+  display: block;
+}
+@media only screen and (max-width: 375px) {
+  .home-banner {
+    background-image: linear-gradient(
+        0.25turn,
+        rgba(0, 97, 225, 0.3),
+        rgba(90, 226, 241, 0.3)
+      ),
+      url('images/bg-home-banner.jpg');
+
+    background-size: cover;
+    /* position: relative; */
+    height: 470px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home-banner {
+    height: 508px;
+  }
+  .navbar-nav {
+    margin-right: -120px;
+  }
+  .container,
+  .container-sm {
+    max-width: 577px;
+  }
+  .col-10 {
+    max-width: 80.333333%;
+  }
+
+  .listpara {
+    font-size: 21px;
+  }
+  .margin {
+  }
+  .marginoverview {
+    margin-bottom: 100px;
+  }
+  .brandlogo {
+    margin-left: -444%;
+  }
+}
+@media only screen and (max-width: 500px) {
+}
+.navbar-nav {
+  color: white;
+}
+a {
+  color: white;
+  font-size: large;
+  font-weight: 900;
+}
+.row {
+  margin: 0px !important;
+}
+a:hover {
+  color: #076bfe;
+}
+
+h1 {
+  color: white;
+  font-weight: 900;
+  margin-top: 17%;
+}
+.workexperiecehading {
+  color: #076bfe;
+  margin-top: 3%;
+}
+hr {
+  border: none;
+  height: 3px;
+
+  color: turquoise;
+  background-color: #076bfe;
+}
+.img-bg {
+  border-style: solid;
+  border-radius: 112px;
+  border-color: rgb(243, 243, 253);
+}
+.date {
+  font-style: italic;
+  color: #076bfe;
+}
+li::marker {
+  color: #076bfe;
+}
+.listpara {
+  list-style-type: square;
+  padding: 0 0 3px 0;
+}
+.opacitypara {
+  opacity: 0.5;
+  font-size: 12px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1800px;
+  margin: 40px 0;
+}
+
+body .containers .card {
+  position: relative;
+  min-width: 350px;
+  height: 400px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+body .containers .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .containers .card .box:hover {
+  transform: translateY(-20px);
+}
+
+body .containers .card .box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .containers .card .box .content {
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+
+body .containers .card .box .content h2 {
+  position: absolute;
+  /* z-index: ; */
+  top: -10px;
+  right: 30px;
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .containers .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .containers .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/* body .containers .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .containers .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+} */
+
+/* 
+body .containers .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+body .containers .card:nth-child(2) .box .content a {
+  background: #2196f3;
+}
+
+body .containers .card:nth-child(3) .box .content a {
+  background: #2196f3;
+} */
+.text-center {
+  text-align: center !important;
+  margin-top: 21%;
+}
+a.nav-link {
+  color: white;
+}
+a.nav-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+pb-5,
+.py-5 {
+  margin-left: 40%;
+  /* margin-bottom: -151px; */
+  justify-content: center;
+  padding-bottom: 3rem !important;
+}
+.anchortag {
+  color: white;
+}
