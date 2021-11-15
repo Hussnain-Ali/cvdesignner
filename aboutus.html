@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <!-- Including the bootstrap CDN -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -11,12 +12,11 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
+    <link rel="stylesheet" href="mobileindex.css" />
   </head>
   <body>
     <div class="home-banner">
@@ -24,22 +24,22 @@
         <nav class="navbar navbar-expand-sm bg-transparent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link about" href="/overview.html">
+              <a class="nav-link" href="/overview.html">
                 Overview
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link about" href="/aboutus.html">
+              <a class="nav-link" href="/aboutus.html">
                 About
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link about" href="/cart.html">
+              <a class="nav-link" href="/cart.html">
                 Interest
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link about" href="#Experience">
+              <a class="nav-link" href="/index.html">
                 Experience
               </a>
             </li>
@@ -51,9 +51,8 @@
         </h1>
       </div>
     </div>
-
     <div class="row justify-content-center">
-      <div class="col-6">
+      <div class="col-md-10 col-sm-12">
         <p
           style="
             text-align: center;
@@ -94,7 +93,7 @@
         ></iframe>
       </div>
     </div>
-    <footer class="page-footer font-small cyan darken-3" id="back">
+    <footer class="page-footer font-small cyan darken-3">
       <!-- Footer Elements -->
       <div class="container">
         <!-- Grid row-->
@@ -127,5 +126,6 @@
         </div>
       </div>
     </footer>
+    <div class="margin"></div>
   </body>
 </html>

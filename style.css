@@ -25,12 +25,16 @@
     height: 470px;
   }
 }
+.about-content {
+  justify-content: center;
+}
 @media only screen and (min-width: 768px) {
   .home-banner {
     height: 508px;
   }
-  .navbar-nav {
-    margin-right: -120px;
+  .navbar-nav,
+  ml-auto {
+    margin-right: -214px;
   }
   .container,
   .container-sm {
@@ -49,10 +53,28 @@
     margin-bottom: 100px;
   }
   .brandlogo {
-    margin-left: -444%;
+    margin-left: -460%;
   }
 }
-@media only screen and (max-width: 500px) {
+@media (min-width: 600px) {
+  p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1400px) {
+  .navbar-nav,
+  ml-auto {
+    margin-right: -409px;
+  }
+}
+@media (min-width: 2500px) {
+  .navbar-nav,
+  ml-auto {
+    margin-right: -839px;
+  }
+  a {
+    size: 5rem;
+  }
 }
 .navbar-nav {
   color: white;
@@ -64,6 +86,7 @@ a {
 }
 .row {
   margin: 0px !important;
+  background-color: white;
 }
 a:hover {
   color: #076bfe;
@@ -77,6 +100,18 @@ h1 {
 .workexperiecehading {
   color: #076bfe;
   margin-top: 3%;
+}
+.bussinessDevelopment {
+  font-weight: 500;
+  color: #076bfe;
+}
+.bProcess {
+  font-size: 1.5vw;
+  color: #076bfe;
+}
+.education-sub-heading {
+  font-size: 1.5vw;
+  color: #076bfe;
 }
 hr {
   border: none;
@@ -104,6 +139,11 @@ li::marker {
 .opacitypara {
   opacity: 0.5;
   font-size: 12px;
+  font-style: italic;
+}
+.courses {
+  margin-left: 2%;
+  font-weight: 600;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
 * {
@@ -119,7 +159,7 @@ body .containers {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1800px;
-  margin: 40px 0;
+  margin-top: -150px;
 }
 
 body .containers .card {
